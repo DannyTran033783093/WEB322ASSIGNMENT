@@ -1,0 +1,35 @@
+<div class= "meals">
+    <div class="meals_text">
+<h1>Meal Packages Plan</h1>
+<p>Check out our nutritous plan's</p>
+<p>Please select one to see what comes with it</p>
+    </div>
+</div>
+<div class="columnHeading">
+    <p>Pick a plan, choose your food, <i>it is that easy!</i></p>
+<div class="row">
+  <div class="column">
+   <a href= "#"> <img src="/img/hp.jpg" alt="Snow" style="width:120%"></a>
+  </div>
+  <div class="column">
+   <a href= "#"><img src="/img/fb.jpg" alt="Forest" style="width:120%"> </a> 
+  </div>
+  <div class="column">
+    <a href= "#"><img src="/img/wl.jpg" alt="Mountains" style="width:100%"></a>
+  </div>
+  <div class="column">
+   <a href="#"><img src="/img/keto.jpg" alt="Mountains" style="width:100%"></a> 
+  </div>
+</div>
+</div>
+
+<div class="row">
+{{#each food}}
+ <div class="column">
+      <h3>{{this.title}}</h3>
+      ${{this.price}}/day<br>
+      {{this.description}}
+  </div>
+
+{{/each}}
+</div>

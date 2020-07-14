@@ -1,0 +1,63 @@
+
+<div class = "hero-image">
+    <div class ="hero-text">
+        <h1>POP-FRESH</h1>
+        <a class="signup-btn" href="/customerRegistration">Sign up Now!</a>
+        <a class="signup-btn" href="/mealPackagePage">More Info</a>
+    </div>
+</div>
+
+<div class="columnHeading">
+    <h2>Our meal plans include delicious foods</h2>
+    <p>try our amazing plans soon</p>
+    <div class="row">
+  <div class="column">
+   <a href= "#"> <img src="/img/Pick_1.gif"style="width:100%"></a>
+   <h3>Pick</h3>
+   <p>Pick your food from a 100 selections</p>
+  </div>
+  <div class="column">
+   <a href= "#"><img src="/img/Pick_2.gif"style="width:100%"> </a>
+   <h3>Heat</h3> 
+   <p>Delivery same day</p>
+  </div>
+  <div class="column">
+    <a href= "#"><img src="/img/Pick_3.gif"style="width:100%"></a>
+    <h3>Eat</h3>
+    <p>Heat your food when you want, and enjoy</p>
+  </div>
+  <div class="column">
+   <a href="#"><img src="/img/Pick_4.gif" style="width:100%"></a> 
+   <h3>Repeat</h3>
+   <p>Then Repeat</p>
+  </div>
+</div>
+</div>
+
+<div class="row">
+    <h2>Top Meal Packages</h2>
+  <div class="column">
+   <a href= "#"> <img src="/img/hp.jpg" alt="Snow" style="width:120%"></a>
+  </div>
+  <div class="column">
+   <a href= "#"><img src="/img/fb.jpg" alt="Forest" style="width:120%"> </a> 
+  </div>
+  <div class="column">
+    <a href= "#"><img src="/img/wl.jpg" alt="Mountains" style="width:100%"></a>
+  </div>
+  <div class="column">
+   <a href="#"><img src="/img/keto.jpg" alt="Mountains" style="width:100%"></a> 
+  </div>
+</div>
+
+<div class="row">
+    {{#each food}}
+  <div class="column">
+     <h3> {{this.title}}</h3>
+      ${{this.price}}/day <br>
+      {{this.description}}
+  </div>
+  
+  {{/each}}
+</div>
+
