@@ -22,7 +22,7 @@ const generalController = require("./controllers/general");
 app.use("/",generalController);
 
 //web server creation 
-const PORT=3000;
+const PORT= process.env.PORT || 3000;
 
 //sets up server
 app.listen(PORT,()=>{

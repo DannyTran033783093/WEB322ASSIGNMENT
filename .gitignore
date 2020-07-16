@@ -1,4 +1,4 @@
-node_modules
+node_modules/
 config/keys.env
 dishes.jpg
 fb.jpg
